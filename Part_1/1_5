@@ -1,0 +1,25 @@
+# Following command does everything
+
+PS F:\Documents\Opiskelu\DevOpsDocker2019> docker run -it --rm ubuntu sh -c 'apt-get update; apt-get -qq -y install curl; echo "Input_website:"; read w; echo "Looking.."; sleep 1; curl http://$w'
+
+# Results
+<snip>
+Setting up curl (7.58.0-2ubuntu3.8) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for ca-certificates (20180409) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Input_website:
+helsinki.fi
+Looking..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+PS F:\Documents\Opiskelu\DevOpsDocker2019>
+

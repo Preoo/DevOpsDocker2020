@@ -1,0 +1,12 @@
+# Commands
+PS F:\Documents\Opiskelu\DevOpsDocker2019> docker run -d --rm devopsdockeruh/exec_bash_exercise
+38e880433930b6376ab990ab526e557f6dcabf87d5cec3dd50170c0edceae043
+
+PS F:\Documents\Opiskelu\DevOpsDocker2019> docker exec -it 38 /bin/bash
+root@38e880433930:/usr/app# ls
+Dockerfile  README.md  index.js  logs.txt
+root@38e880433930:/usr/app# tail -f logs.txt
+Sat, 28 Mar 2020 1:20:32 GMT
+Sat, 28 Mar 2020 14:20:35 GMT
+Secret message is:
+"Docker is easy"
