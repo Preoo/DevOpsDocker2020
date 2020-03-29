@@ -1,0 +1,10 @@
+PS F:\Documents\Opiskelu\DevOpsDocker2019\Part_1\6> docker run -it docker-clock
+6
+7
+8
+9
+10
+11
+12
+13
+^C

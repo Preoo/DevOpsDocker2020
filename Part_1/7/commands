@@ -1,0 +1,18 @@
+# Build in folder with Dockerfile and website_fetch.sh script file
+PS F:\Documents\Opiskelu\DevOpsDocker2019\Part_1\7> docker build -t curler .
+
+# Run Docker with command
+PS F:\Documents\Opiskelu\DevOpsDocker2019\Part_1\7> docker run -it curler
+
+# Output with helsinki.fi as input
+Input_website:
+helsinki.fi
+Looking..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+PS F:\Documents\Opiskelu\DevOpsDocker2019\Part_1\7>
