@@ -1,0 +1,5 @@
+# Notes about ubuntu containers on windows hosts
+Using relative paths, e.g ${pwd}\log.txt would fail with `Error response from daemon: file does not exist.` Using absolute paths fixes this but is highnly annoying.
+
+# Commands
+PS F:\Documents\Opiskelu\DevOpsDocker2019\Part_1\8> docker run -v F:\Documents\Opiskelu\DevOpsDocker2019\Part_1\8\log.log:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
