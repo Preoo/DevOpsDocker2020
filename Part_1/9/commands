@@ -1,0 +1,9 @@
+# Commands
+docker run -p 80 devopsdockeruh/ports_exercise
+
+# Notes
+After running commands, I grabbed randomly selected host port
+using command docker ps
+
+Connecting to localhost:<port> return message: 
+	Ports configured correctly!!
