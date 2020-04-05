@@ -34,3 +34,19 @@ access was silently given. Atleast on version 2.2.0.4 binding volume raises erro
 
 You need to enable access to disk(s) in Docker/Settings/Resources/File Sharing/
 
+## Using windows standard user with Docker
+
+You need to add your logon account to Windows group, docker-users. Docker for Window will create this group automatically when docker for Windows is installed.
+
+Steps:
+
+    Logon to Windows as Administrator
+    Go to Windows Administrator Tools
+    Look for Windows Computer Management and click on it.
+    Or you can skip steps 1, right mouse clicking Computer Management, go to more, and select run as administrator and provide Administrator password.
+    Double click docker-users group and add your account as member.
+    Also add your account to Hyper-V Administrator. This was added when you installed docker for Windows.
+    Log off from Windows and log back on.
+    Click on Windows icon on bottom left and start Docker for Windows. This will start docker windows service.
+    9 Start Windows Powershell and type docker --version. It will show Docker version 17.09.1-ce, build 19e2cf6. This is the latest version.
+
