@@ -1,4 +1,3 @@
 # Ignore forked example project files which are not needed for returns
 /frontend/*
 /backend/*
-
