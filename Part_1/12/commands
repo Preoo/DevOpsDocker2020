@@ -1,0 +1,20 @@
+# Frontend
+## Build
+docker build -t frontend .\frontend\
+## Run
+docker run -p 5000:5000 frontend
+
+# Backend
+## Build
+docker build -t backend .\backend\
+## Run
+docker run -v F:\Documents\Opiskelu\DevOpsDocker2019\backend\logs.txt:/logs.txt -p 8000:8000 backend
+
+# Results
+Exercise 1.12 buttons turns green and text 'Working!' is displayed next to it.
+
+# Notes
+All commands are run from 'root' directory
+PS F:\Documents\Opiskelu\DevOpsDocker2019>
+
+Frontend and Backend Dockerfiles are in separate directories, thus commands differ slightly from included dockerfiles.

@@ -16,6 +16,9 @@ SSH into a detached container (-d) with command:
 `docker exec -it <container-id> bin/bash` OR
 `docker exec -it <id> bash`
 
+### Removing dangling Docker images
+docker rmi $(docker images -f "dangling=true" -q)
+
 ### Volumes:bind mounting and EACCESS errors on windows
 On Windows 10 (atleast on build 1809) while using powershell 5.\*
 You need to bind working directory with command ${pwd}. Working command is

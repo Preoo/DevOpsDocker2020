@@ -1,0 +1,14 @@
+# Build
+PS F:\Documents\Opiskelu\DevOpsDocker2019> docker build -t backend .\backend\
+
+# Run
+PS F:\Documents\Opiskelu\DevOpsDocker2019> docker run -v F:\Documents\Opiskelu\DevOpsDocker2019\backend\logs.txt:/logs.txt -p 8000:8000 backend
+
+# Results
+localhost:8000 replied:
+Port configured correctly, generated message in logs.txt
+
+$ cat backend/logs.txt
+
+4/5/2020, 12:25:32 PM: Connection received in root
+
