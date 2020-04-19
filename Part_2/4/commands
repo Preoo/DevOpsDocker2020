@@ -1,0 +1,9 @@
+# Solution and notes
+## Solution
+Was able to fill bar usign scaling with following command
+`docker-compose up --scale compute=10`
+
+## Notes
+Used port 80 was taken by System in my Windows10 box.
+I had to modify included docker-compose.yml to bind 8080 instead.
+This caused cors errors as calculator-frontend was still sending post requests to compute.localtest.me:80. I had to edit commons.js to use port 8080 instead by ` const { data } = await axios.post('http://compute.localtest.me:8080', payload)` and rebuilding docker images with `docker-compose up --build`.
