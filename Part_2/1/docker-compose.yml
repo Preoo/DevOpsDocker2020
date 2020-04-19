@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+        first-volume-exercise:
+                image: devopsdockeruh/first_volume_exercise
+                volumes:
+                        - F:\Documents\Opiskelu\DevOpsDocker2019\Part_1\8\log.log:/usr/app/logs.txt
+                container_name: first-volume-exercise-compose
+
