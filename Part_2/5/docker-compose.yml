@@ -12,14 +12,8 @@ services:
                         - F:\Documents\Opiskelu\DevOpsDocker2019\backend\logs.txt:/logs.txt
                 environment:
                         - REDIS=redis
-                        - DB_USERNAME=docker
-                        - DB_PASSWORD=insecure
-                        - DB_NAME=docker
-                        - DB_HOST=db
                 networks:
                         - backend-network
-                depends_on:
-                        - db
          
         redis:
                 image: "redis:alpine"
@@ -27,13 +21,6 @@ services:
                         - ./redis/data:/data
                 networks:
                         - backend-network
-        db:
-                image: "postgres:alpine"
-                networks:
-                        - backend-network
-                environment:
-                        - POSTGRES_USER=docker
-                        - POSTGRES_PASSWORD=insecure
-                        - POSTGRES_DB=docker
+
 networks:
         backend-network:
