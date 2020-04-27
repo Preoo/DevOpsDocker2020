@@ -16,8 +16,12 @@ SSH into a detached container (-d) with command:
 `docker exec -it <container-id> bin/bash` OR
 `docker exec -it <id> bash`
 
+### Cannot bind port 80
+On my machine IIS was binding port 80 on startup.
+Resolve by running Administrative Tools/Internet Information Services (IIS) Manager as admin and stopping server on localhost.
+
 ### Removing dangling Docker images
-docker rmi $(docker images -f "dangling=true" -q)
+Remove dangling images `docker image prune` and all images by adding option `-a`.
 
 ### Volumes:bind mounting and EACCESS errors on windows
 On Windows 10 (atleast on build 1809) while using powershell 5.\*
