@@ -37,6 +37,9 @@ access was silently given. Atleast on version 2.2.0.4 binding volume raises erro
 
 You need to enable access to disk(s) in Docker/Settings/Resources/File Sharing/
 
+### backend container crashes [exit(1)] after stopping and starting again with compose up
+Only workaround seems to be wiping out containers with `docker-compose down` and bring them alive with `up`.
+
 ## Using windows standard user with Docker
 
 You need to add your logon account to Windows group, docker-users. Docker for Window will create this group automatically when docker for Windows is installed.

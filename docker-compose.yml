@@ -12,6 +12,9 @@ services:
                 build: ./backend
                 ports:
                         - 8000:8000
+                # May need to change this bind to named volume
+                # as Windows Host <-> Unix container binds are
+                # done as root.
                 volumes:
                         - F:\Documents\Opiskelu\DevOpsDocker2019\backend\logs.txt:/logs.txt
                 environment:
