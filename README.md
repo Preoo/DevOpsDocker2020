@@ -1,6 +1,8 @@
 # About
 This repo contains my solutions for MOOC course
-`DevOps with Docker 2019`
+`DevOps with Docker 2019`. This is deemed complete.
+Some exercises are skipped. In order to get credits
+those exercises must be revisited and complited.
 
 ## Organization
 Excercies are organized into directories per Parts.
