@@ -3,3 +3,5 @@
 /backend/*
 /scaling/*
 /redis/*
+![dD]ocker*
+!/scaling/docker-compose.yml
